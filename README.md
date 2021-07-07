@@ -9,3 +9,5 @@ What I learned
 -Took 10 hours to finish this project.
 
 -Hit a lot of walls, but was able to punch through them using the 'take a break' technique. Whenever you feel overwhelmed by a problem, take a break and come back later.
+
+live demo https://ikeronx.github.io/rock-paper-scissors/

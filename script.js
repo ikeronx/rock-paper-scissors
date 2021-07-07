@@ -79,7 +79,7 @@ function game() {
         scoreCounter();
 }
 //Rules Popup.
-alert("Rules: \n\n 1. Before beginning this game press f12 to open console.\n 2. There are 5 rounds in this game. \n 3. If you win a round, you gain 2 points. \n 4. If you lose a round, you gain 0 points. \n 5. If there is a tie, you gain 1 points. \n 6. If you don't enter anything, you lose that round. \n 7. In order to win this game, your score in the final round must be\n      more than final round score of computer. \n 8. Press f5 to reset the game.");
+alert("Rules: \n\n 1. Before beginning this game press  option + ⌘ + J (on macOS), or Shift + CTRL + J (on Windows/Linux) to open console.\n 2. There are 5 rounds in this game. \n 3. If you win a round, you gain 2 points. \n 4. If you lose a round, you gain 0 points. \n 5. If there is a tie, you gain 1 points. \n 6. If you don't enter anything, you lose that round. \n 7. In order to win this game, your score in the final round must be\n      more than final round score of computer. \n 8. Press f5 to reset the game.");
 
 //Ensures 5 rounds of game.
 for (let i = 0; i < 5; i++){
