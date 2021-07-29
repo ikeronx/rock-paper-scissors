@@ -49,85 +49,85 @@ function playRound(playerSelection, computerSelection){
 
 //scoreCounter() keeps score & adds previous round's score (cumulative)
 function scoreCounter() {
-    if (playerScore == 5) {
-            body.removeChild(score);
-            score.textContent = "Congratulations, you won! You scored " + playerScore + ", while the computer scored " + computerScore + ".";
-            playerScore = 0;
-            computerScore = 0;
-            body.removeChild(results);
-            body.appendChild(score);
-            return;
-        } else if (computerScore == 5) {
-            body.removeChild(score);
-            score.textContent = "You lost! The computer scored " + computerScore + ", while you scored " + playerScore + ". Better luck next time!";
-            playerScore = 0;
-            computerScore = 0;
-            body.removeChild(results);
-            body.appendChild(score);
-            return;
-        } else {
-            return;
+if (playerScore == 5) {
+    body.removeChild(score);
+    score.textContent = "Congratulations, you won! You scored " + playerScore + ", while the computer scored " + computerScore + ".";
+    playerScore = 0;
+    computerScore = 0;
+    body.removeChild(results);
+    body.appendChild(score);
+    return;
+  } else if (computerScore == 5) {
+    body.removeChild(score);
+    score.textContent = "You lost! The computer scored " + computerScore + ", while you scored " + playerScore + ". Better luck next time!";
+    playerScore = 0;
+    computerScore = 0;
+    body.removeChild(results);
+    body.appendChild(score);
+    return;
+  } else {
+    return;
         }
 }
 
 //Add an event listener to the buttons that calls your playRound function with the correct playerSelection every time a button is clicked.
 let rock = document.querySelector('#rock');
-		rock.addEventListener('click', () => {
-				let computerSelection = computerPlay();
-				results.textContent = playRound('rock', computerSelection);
-				body.appendChild(results);
-				if (computerSelection == 'Scissors') {
-					playerScore += 1;
-					score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
-					body.appendChild(score);
-				} else if (computerSelection == 'Paper') {
-					computerScore += 1;
-					score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
-					body.appendChild(score);
-				} else {
-					score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
-					body.appendChild(score);
-				}
-				scoreCounter();
-        });
+	rock.addEventListener('click', () => {
+	let computerSelection = computerPlay();
+	results.textContent = playRound('rock', computerSelection);
+	body.appendChild(results);
+if (computerSelection == 'Scissors') {
+	playerScore += 1;
+	score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
+	body.appendChild(score);
+} else if (computerSelection == 'Paper') {
+	computerScore += 1;
+	score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
+	body.appendChild(score);
+} else {
+	score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
+	body.appendChild(score);
+}
+scoreCounter();
+});
         
 let paper = document.querySelector('#paper');
-		paper.addEventListener('click', () => {
-				let computerSelection = computerPlay();
-				results.textContent = playRound('paper', computerSelection);
-				body.appendChild(results);
-				if (computerSelection == 'Rock') {
-				 playerScore += 1;
-				 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
-				 body.appendChild(score);
-			 } else if (computerSelection == 'Scissors') {
-				 computerScore += 1;
-				 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
-				 body.appendChild(score);
-			 } else {
-				 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
-				 body.appendChild(score);
-			 }
-            scoreCounter();
-        });
-        
+paper.addEventListener('click', () => {
+	let computerSelection = computerPlay();
+	results.textContent = playRound('paper', computerSelection);
+	body.appendChild(results);
+if (computerSelection == 'Rock') {
+	 playerScore += 1;
+	 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
+	 body.appendChild(score);
+ } else if (computerSelection == 'Scissors') {
+	 computerScore += 1;
+	 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
+	 body.appendChild(score);
+ } else {
+	 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
+	 body.appendChild(score);
+	 }
+scoreCounter();
+});
+
 let scissors = document.querySelector('#scissors');
-		scissors.addEventListener('click', () => {
-				let computerSelection = computerPlay();
-				results.textContent = playRound('scissors', computerSelection);
-				body.appendChild(results);
-				if (computerSelection == 'Paper') {
-				 playerScore += 1;
-				 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
-				 body.appendChild(score);
-			 } else if (computerSelection == 'Rock') {
-				 computerScore +=1;
-				 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
-				 body.appendChild(score);
-			 } else {
-				 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
-				 body.appendChild(score);
-			 }
-			 scoreCounter();
-        });
+	scissors.addEventListener('click', () => {
+        let computerSelection = computerPlay();
+	results.textContent = playRound('scissors', computerSelection);
+	body.appendChild(results);
+if (computerSelection == 'Paper') {
+	 playerScore += 1;
+	 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
+	 body.appendChild(score);
+ } else if (computerSelection == 'Rock') {
+	 computerScore +=1;
+	 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
+	 body.appendChild(score);
+ } else {
+	 score.textContent = 'Player score: ' + playerScore + ' Computer score: ' + computerScore;
+	 body.appendChild(score);
+ }
+ scoreCounter();
+});
          
