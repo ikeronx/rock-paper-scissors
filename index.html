@@ -7,7 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <style> 
+    .game-rules{
+        position: fixed;
+        top: 20%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+    #rock{
+        position: fixed;
+        top: 30%;
+        left: 45%; 
+        transform: translate(-50%, -50%);
+    }
+    #paper{
+        position: fixed;
+        top: 30%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+    #scissors{
+        position: fixed;
+        top: 30%;
+        left: 56%; 
+        transform: translate(-50%, -50%);
+    }
+    .score-counter{
+        position: fixed;
+        top: 40%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+    .results{
+        position: fixed;
+        top: 35%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+    </style>
+    <button class="game-rules" type="button">Games Rules</button>
+
+    <button id="rock" type="button">Rock</button>
+    <button id="paper" type="button">Paper</button>
+    <button id="scissors" type="button">Scissors</button>
+
+    <div ><p class="score-counter"></p></div>
+    <div><p class="results"></p></div>
+
    <script src='script.js'></script>
 </body>
 </html>
+
+
