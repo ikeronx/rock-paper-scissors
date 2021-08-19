@@ -15,10 +15,14 @@ Create a simple implementation of rock-paper-scissors in the browser console. It
 5. You will likely have to refactor (rework/rewrite) your original code to make it work for this. That’s OK! Reworking old code is an important part of the programmer’s life. 
 6. Don’t forget to go back and add your new version to the original Rock Paper Scissors Project! 
 
-#### Skills strengthened/demonstrated: 
+#### What I learned:
 - DOM manipulation, including the use of querySelector(), createElement(), modifying text content, and appending/removing child nodes. 
 - The use of event listeners to trigger blocks of code 
 - Learning the importance of separating re-used blocks of code into functions, instead of having the same lines of code repeated.
+- Better knowledge of Javascript.
+- Improved code structure and code readability.
+- Improved clean code writing.
+- A lot of minor things.
 
 ## Built with
 
@@ -33,5 +37,3 @@ Create a simple implementation of rock-paper-scissors in the browser console. It
 * HTML
 * CSS
 * JS
-
-
