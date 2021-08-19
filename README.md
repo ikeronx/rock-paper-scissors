@@ -17,8 +17,8 @@ Create a simple implementation of rock-paper-scissors in the browser console. It
 
 #### Skills strengthened/demonstrated: 
 - DOM manipulation, including the use of querySelector(), createElement(), modifying text content, and appending/removing child nodes. 
-- the use of event listeners to trigger blocks of code 
-- learning the importance of separating re-used blocks of code into functions, instead of having the same lines of code repeated.
+- The use of event listeners to trigger blocks of code 
+- Learning the importance of separating re-used blocks of code into functions, instead of having the same lines of code repeated.
 
 
 
