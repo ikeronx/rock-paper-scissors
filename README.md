@@ -20,6 +20,18 @@ Create a simple implementation of rock-paper-scissors in the browser console. It
 - The use of event listeners to trigger blocks of code 
 - Learning the importance of separating re-used blocks of code into functions, instead of having the same lines of code repeated.
 
+## Built with
 
+#### Tools
+
+* Visual Studio Code
+* UNIX terminal
+* Git and GitHub
+
+#### Technologies
+
+* HTML
+* CSS
+* JS
 
 
