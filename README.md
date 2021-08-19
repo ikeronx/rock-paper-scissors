@@ -1,4 +1,4 @@
-# Rock Paper Scissors 
+# Rock Paper Scissors 👨🏾‍💻
 
 RPS project for [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/rock-paper-scissors/) Foundations course. 
 
@@ -6,7 +6,7 @@ RPS project for [The Odin Project](https://www.theodinproject.com/paths/foundati
 Create a simple implementation of rock-paper-scissors in the browser console. It is an updated version of previous code which did not include a UI. 
 [Live Demo 👈](https://ikeronx.github.io/rock-paper-scissors/)
 
-##### Steps:
+#### Steps:
 1. Copy your original code into a new file so you don’t lose it. 
 2. For now, remove the logic that plays exactly five rounds. 
 3. Create three buttons, one for each selection. Add an event listener to the buttons that calls your playRound function with the correct playerSelection every time a button is clicked. (you can keep the console.logs for this step)
